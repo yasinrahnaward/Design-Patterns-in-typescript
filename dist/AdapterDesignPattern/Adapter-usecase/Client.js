@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const WildTurkey_1 = require("./WildTurkey");
+const MallarDuck_1 = require("./MallarDuck");
+const TurkeyAdaper_1 = require("./TurkeyAdaper");
+const duk = new WildTurkey_1.default();
+const turkey = new TurkeyAdaper_1.default(duk);
+turkey.Fly();
+turkey.Quak();
+console.log(duk instanceof MallarDuck_1.default);
