@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Observable_1 = require("./Observable");
+const Observer_1 = require("./Observer");
+const publisher = new Observable_1.default();
+const subscrib_1 = new Observer_1.default(publisher);
+const subscrib_2 = new Observer_1.default(publisher);
+publisher.Notify('first notif : ', "Observer Design patter uploaded");
+publisher.UnSubsrib(subscrib_2);
+publisher.Notify('Second notif : ', "Iterator Design patter uploaded");
