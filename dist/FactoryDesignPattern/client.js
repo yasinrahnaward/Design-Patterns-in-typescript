@@ -1,0 +1,13 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const Maxpizza_1 = require("./Maxpizza");
+const CheesePizza_1 = require("./CheesePizza");
+const GreekPizza_1 = require("./GreekPizza");
+const OrderPizza_1 = require("./OrderPizza");
+const pizzaorder = new OrderPizza_1.default();
+const greekpizz = new GreekPizza_1.default();
+pizzaorder.Order(greekpizz);
+const cheesPizza = new CheesePizza_1.default();
+pizzaorder.Order(cheesPizza);
+const maxpizz = new Maxpizza_1.default();
+pizzaorder.Order(maxpizz);
